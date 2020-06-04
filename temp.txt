@@ -1,0 +1,32 @@
+User user1 = new User("Dinh Phu", "031246235", "Hai PHong", "ndp16@gmail.com", "codegy", "male", LocalDate.of(1992, 1, 16));
+User user2 = new User("Viet Hung", "34573457", "Hai Duong", "ndp16@gmail.com", "codegy", "male", LocalDate.of(1993, 10, 24));
+User user3 = new User("Van Vu", "38345345", "Nam Dinh", "ndp16@gmail.com", "codegy", "male", LocalDate.of(1993, 11, 14));
+User user4 = new User("Van Lien", "031246235", "Thai Binh", "ndp16@gmail.com", "codegy", "male", LocalDate.of(1989, 3, 21));
+User user5 = new User("Anh Son", "74686458", "Dien Bien", "ndp16@gmail.com", "codegy", "male", LocalDate.of(1995, 6, 5));
+User user6 = new User("Do Hiep", "86592324", "Ha Noi", "ndp16@gmail.com", "codegy", "male", LocalDate.of(1996, 8, 3));
+User user7 = new User("Tuan Dat", "7456845", "Hue", "ndp16@gmail.com", "codegy", "male", LocalDate.of(1995, 9, 28));
+User user8 = new User("The Tuyen", "23446735", "Ha Tinh", "ndp16@gmail.com", "codegy", "male", LocalDate.of(1990, 2, 14));
+User user9 = new User("Quang Long", "3458324", "Ha Noi", "ndp16@gmail.com", "codegy", "male", LocalDate.of(1988, 6, 23));
+User user10 = new User("Do Thanh", "34563573", "Hai Duong", "ndp16@gmail.com", "codegy", "female", LocalDate.of(1997, 12, 21));
+User user11= new User("Quoc Bao", "35463589", "Ha Noi", "ndp16@gmail.com", "codegy", "male", LocalDate.of(1991, 11, 16));
+User user12 = new User("Tran Toan", "52347568", "Vinh Phuc", "ndp16@gmail.com", "codegy", "male", LocalDate.of(1994, 5, 12));
+ArrayList<String[]> userBufferList=new ArrayList<>();
+userBufferList.add(user1.getArray());
+userBufferList.add(user2.getArray());
+userBufferList.add(user3.getArray());
+userBufferList.add(user4.getArray());
+userBufferList.add(user5.getArray());
+userBufferList.add(user6.getArray());
+userBufferList.add(user7.getArray());
+userBufferList.add(user8.getArray());
+userBufferList.add(user9.getArray());
+userBufferList.add(user10.getArray());
+userBufferList.add(user11.getArray());
+userBufferList.add(user12.getArray());
+writer.writeAll(userBufferList);
+try {
+        writer.flush();
+
+} catch (IOException e) {
+        e.printStackTrace();
+}
